@@ -101,15 +101,9 @@ steps:
   displayName: 'Copy JavaScript Files: $(System.DefaultWorkingDirectory)\**\*.js'
   inputs:
     SourceFolder: '$(System.DefaultWorkingDirectory)'
-    Contents: '**\.js'
+    Contents: '**\*.js'
     TargetFolder: '$(Build.StagingDirectory)'
 
-- task: CopyFiles@2
-  displayName: 'Copy JavaScript Files: $(System.DefaultWorkingDirectory)\**\*.js'
-  inputs:
-    SourceFolder: '$(System.DefaultWorkingDirectory)'
-    Contents: '**\.js'
-    TargetFolder: '$(Build.StagingDirectory)'
 
 - task: CopyFiles@2
   displayName: 'Copy Readme and package information'
