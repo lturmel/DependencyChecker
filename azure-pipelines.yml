@@ -165,4 +165,3 @@ steps:
   displayName: 'Publish Pipeline Artifact'
   inputs:
     targetPath: '$(Build.SourcesDirectory)'
-  condition: failed()
